@@ -2998,16 +2998,11 @@ body.image-viewer-open {
 }
 
 .auth-logo {
+  display: block;
   width: 52px;
   height: 52px;
   margin: 0 auto 12px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #07c160, #06ad56);
-  color: #fff;
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: contain;
 }
 
 #authCard h2 {

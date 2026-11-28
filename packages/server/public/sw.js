@@ -5,20 +5,20 @@
  * - 新版本:skipWaiting + 清理旧缓存
  */
 
-const CACHE_NAME = 'wepo-shell-v109';
+const CACHE_NAME = 'wepo-shell-v116';
 
 const SHELL = [
   '/',
   '/index.html',
-  '/styles.css?v=20261125k',
-  '/app.js?v=20261125k',
+  '/styles.css?v=20261128g',
+  '/app.js?v=20261128g',
   '/theme-init.js',
   '/manifest.webmanifest',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
-  '/icons/icon-maskable-512.png',
-  '/icons/apple-touch-icon.png',
-  '/icons/favicon-32.png',
+  '/icons/icon-192.png?v=20261128g',
+  '/icons/icon-512.png?v=20261128g',
+  '/icons/icon-maskable-512.png?v=20261128g',
+  '/icons/apple-touch-icon.png?v=20261128g',
+  '/icons/favicon-32.png?v=20261128g',
 ];
 
 self.addEventListener('install', (event) => {
