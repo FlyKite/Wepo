@@ -1,8 +1,7 @@
 <p align="center">
   <img src="https://github.com/FlyKite/Wepo/blob/main/images/icon-72.png?raw=true" width="72" height="72" alt="Wepo 微仓">
 </p>
-
-# Wepo 微仓
+<h1 align="center">Wepo 微仓</h1>
 
 你的微信，是不是也占了手机一大半空间？聊天记录舍不得删，手机又天天提示存储不足。
 
@@ -55,7 +54,7 @@ npm run server
 
 ### 查看数据
 
-打开 `http://<NAS 地址>:3800`，输入 Secret，聊天列表就出来了。
+打开 `http://<服务器地址>:3800`，输入 Secret，聊天列表就出来了。
 
 电脑、手机、平板都能用。手机浏览器可以“添加到主屏幕”，用起来跟 App 差不多。在「我」页面能切账号，也能换深色/浅色外观。
 
@@ -67,13 +66,4 @@ npm run server
 
 ## 鸣谢
 
-用到了这些开源项目，谢谢作者和社区：
-
-- [Node.js](https://nodejs.org/)、[Express](https://expressjs.com/)、[SQLite](https://www.sqlite.org/)、[better-sqlite3](https://github.com/WiseLibs/better-sqlite3)
-- [Tauri](https://tauri.app/)、[Rust](https://www.rust-lang.org/)
-- [yauzl](https://github.com/thejoshwolfe/yauzl)、[plist](https://github.com/TooTallNate/plist.js)、[bplist-parser](https://github.com/nearinfinity/node-bplist-parser)、[fast-xml-parser](https://github.com/NaturalIntelligence/fast-xml-parser)
-- [@bokuweb/zstd-wasm](https://github.com/bokuweb/zstd-wasm)、[pinyin-pro](https://github.com/zh-lx/pinyin-pro)
-- [silk-wasm](https://www.npmjs.com/package/silk-wasm)、[@audio/decode-amr](https://www.npmjs.com/package/@audio/decode-amr)
-- [PyAV](https://github.com/PyAV-Org/PyAV)、[Pillow](https://python-pillow.org/)
-
-微信 WCDB zstd 字典和第三方许可说明保留在源码里，项目本身以 MIT 许可开源。
+本项目的实现参考了 [BlueMatthew/WechatExporter](https://github.com/BlueMatthew/WechatExporter) 以及 [DreamHunter2333](https://github.com/DreamHunter2333/) 的私有仓库，在此感谢作者。
