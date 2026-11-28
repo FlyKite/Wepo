@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/FlyKite/Wepo/blob/main/images/icon-72@2x.png?raw=true" width="72" height="72" alt="Wepo 微仓">
+  <img src="https://github.com/FlyKite/Wepo/blob/main/images/icon-72@3x.png?raw=true" width="72" height="72" alt="Wepo 微仓">
 </p>
 <h1 align="center">Wepo 微仓</h1>
 
