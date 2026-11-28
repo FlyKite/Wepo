@@ -1,105 +1,73 @@
+<p align="center">
+  <img src="https://github.com/FlyKite/Wepo/blob/main/images/icon-72.png?raw=true" width="72" height="72" alt="Wepo 微仓">
+</p>
+
 # Wepo 微仓
 
-## 简介
+你的微信，是不是也占了手机一大半空间？聊天记录舍不得删，手机又天天提示存储不足。
 
-Wepo(中文名「微仓」)用于从 **未加密的 iOS 备份** 中解析微信聊天记录，导入自建服务端，并通过微信 PC 风格的网页查看。
+微仓（Wepo）就是为这个场景做的：把没加密的 iPhone 备份里的微信记录解析出来，放到自己搭的服务端。手机上的空间可以腾出来，想翻旧聊天的时候打开网页就能看，界面跟微信电脑版差不多。
 
-主要组成：
+导入交给桌面客户端「微仓助手」，存储和查询交给服务端。文字、图片、语音、视频、文件、链接、引用、表情都能看；多个账号、多份备份可以合并去重，也支持全局搜索和手机、平板浏览。
 
-- **微仓助手**：Tauri 桌面客户端，支持本机目录/zip 导入，也可以把 NAS 备份交给服务端导入。
-- **服务端**：Node.js + Express + SQLite，提供导入 API、数据查询和网页查看器。
-- **解析核心**：定位 iOS 备份文件、按需解压、解析微信联系人和聊天记录。
-
-支持文字、图片、语音、视频、文件、链接、引用、表情等消息类型；支持多账号、多备份合并去重、断点续传、全局搜索、移动端和平板布局及 PWA。
-
-> 本项目仅用于个人备份数据的查看。请遵守相关法律法规，并妥善保管自己的备份和服务端 Secret。
+只建议用来查看自己的备份数据。请遵守当地法律法规，保管好备份文件和服务端 Secret。
 
 ## 安装
 
-### Docker(推荐)
+### 在 NAS 上安装
 
-服务端镜像支持 `linux/amd64` 和 `linux/arm64`。新建 `docker-compose.yml`：
+在 NAS 的 Docker 或容器应用里搜 `flykite/wepo`，下载镜像，建个容器。
 
-```yaml
-services:
-  wepo:
-    image: flykite/wepo:1.0.7
-    container_name: wepo
-    restart: unless-stopped
-    ports:
-      - "3800:3800"
-    environment:
-      WEPO_SECRET: ""
-      TZ: Asia/Shanghai
-    volumes:
-      - ./data:/data
-      - /volume1/backups/iphone:/backups:ro
-```
+记得把容器的 `3800` 端口映射出来；`/data` 挂一个固定目录存数据；iPhone 备份放在哪，就把那个目录只读挂到 `/backups`。Secret 不填也行，第一次启动会自动生成，去容器日志或者 `/data/config.json` 里抄下来。
 
-```bash
-docker compose pull
-docker compose up -d
-```
+![在 NAS 上搜索 flykite/wepo](https://github.com/FlyKite/Wepo/blob/main/images/nas-docker.png?raw=true)
 
-- `/data` 用于保存 SQLite、媒体、导入状态和 `config.json`，必须持久化。
-- `/backups` 挂载 iOS 备份根目录，只读即可。
-- `WEPO_SECRET` 留空时会在 `/data/config.json` 自动生成，并在容器启动日志中显示；也可以自行设置。
-- 千万级消息或大量媒体建议至少分配 2GB 内存。
+### 在本机安装
 
-生产环境建议固定版本号，例如 `flykite/wepo:1.0.7`。
-
-### 源码运行
-
-需要 Node.js 18.x（推荐 18.19.1，仓库已提供 `.nvmrc`）。构建微仓助手还需要 Rust stable、Xcode Command Line Tools 和 macOS。
+先装 Node.js 18（推荐 18.19.1），然后：
 
 ```bash
 git clone https://github.com/FlyKite/Wepo.git
 cd Wepo
-
 npm install
 npm --prefix packages/server install
-
-# 可选：支持新版微信 wxgf 图片
-python3 -m venv packages/server/.wxgf-venv
-packages/server/.wxgf-venv/bin/pip install -r packages/server/scripts/requirements-wxgf.txt
-
 npm run server
-# 另开终端
-npm run desktop:dev
 ```
 
-`npm run server` 默认监听 `3800` 端口；`npm run desktop:dev` 会自动准备内置 Node sidecar 和导入器资源。
+打开 `http://127.0.0.1:3800` 就能用。
 
-打包微仓助手：
-
-```bash
-npm run desktop:package
-```
-
-产物位于 `packages/desktop/src-tauri/target/release/bundle/macos/` 和 `release/`。macOS 包使用 ad-hoc 签名，未公证，首次打开可能需要在系统设置中手动允许。
+想导入电脑上的备份，或者用桌面客户端，再开一个终端跑 `npm run desktop:dev`。要打包成 App 就跑 `npm run desktop:package`，不过得装好 Rust 和 Xcode Command Line Tools（macOS）；打出来的包没签名，第一次打开要去系统设置里放行。
 
 ## 使用方式
 
-1. 使用 Finder/iTunes 创建 iPhone 本地备份，**不要勾选“加密本地备份”**。较新版本微信若单独启用了聊天记录加密，相关数据库无法读取。
+### 备份 iOS 与导入数据
 
-2. **服务端导入 NAS 备份(推荐)**：把备份文件夹放进 `WEPO_BACKUP_DIR`，文件夹中需要包含 `Manifest.plist` 和 `Manifest.db`/`Manifest.mbdb`。然后：
-   - 浏览器打开查看器，进入「我 → 数据源」，选择备份并点击「导入」；或
-   - 在微仓助手的「NAS 备份目录」中选择备份并导入。
+1. 用 Finder（Windows 上是 iTunes 或 Apple Devices）给 iPhone 做一次本地备份。别勾“加密本地备份”，勾了微仓就读不了。macOS 的备份默认在 `~/Library/Application Support/MobileSync/Backup`；Windows 可以在备份列表里右键查看位置。
+2. 把整个备份文件夹丢进 NAS 上映射给 `/backups` 的目录，确认里面有 `Manifest.plist` 和 `Manifest.db`。
+3. 浏览器打开服务端，进「我 → 数据源」，选中这份备份，点「导入」。不想折腾 NAS 的话，也可以打开微仓助手，直接选本机的备份文件夹或 zip 包。
 
-   导入过程中会显示阶段和进度；已导入的备份会标记为「已导入」，未完成的备份可以「继续导入」，不会重复生成记录。
+导入时会显示进度，中途断了可以接着导，已经导过的备份不会重复导入。
 
-3. **本机导入**：打开微仓助手，填写服务端地址和 Secret，选择备份目录或 zip 压缩包，点击「开始解析并导入」。支持断点续传和按需上传媒体文件。
+注意：新版微信如果单独开了聊天记录加密，数据库是读不出来的，这种备份目前没法解析。
 
-4. **查看数据**：浏览器访问 `http://<服务器地址>:3800/`，首次输入 Secret。支持电脑、手机和平板；可在「我」页切换账号和外观，并安装为 PWA。
+![给 iPhone 做本地备份](https://github.com/FlyKite/Wepo/blob/main/images/ios-backup.png?raw=true)
+![在数据源中导入备份](https://github.com/FlyKite/Wepo/blob/main/images/import.png?raw=true)
 
-5. **多备份与安全**：
-   - 多次导入同一账号时，联系人和消息会跨备份合并去重。
-   - 备份中没有的媒体文件会显示占位，不影响文字记录查看。
-   - 不要将服务端直接暴露到公网；如需外网访问，请配置 HTTPS、强 Secret 和防火墙。
+### 查看数据
+
+打开 `http://<NAS 地址>:3800`，输入 Secret，聊天列表就出来了。
+
+电脑、手机、平板都能用。手机浏览器可以“添加到主屏幕”，用起来跟 App 差不多。在「我」页面能切账号，也能换深色/浅色外观。
+
+同一个账号导入多份备份时，联系人和消息会自动合并去重。备份里缺的图片、语音会显示占位，不影响看文字。
+
+最后提醒一句：别把服务端直接开到公网。真要外网访问，至少把 HTTPS 和足够强的 Secret 配好。
+
+![查看聊天记录](https://github.com/FlyKite/Wepo/blob/main/images/viewer.png?raw=true)
 
 ## 鸣谢
 
-本项目基于以下开源项目和服务构建，感谢作者与社区：
+用到了这些开源项目，谢谢作者和社区：
 
 - [Node.js](https://nodejs.org/)、[Express](https://expressjs.com/)、[SQLite](https://www.sqlite.org/)、[better-sqlite3](https://github.com/WiseLibs/better-sqlite3)
 - [Tauri](https://tauri.app/)、[Rust](https://www.rust-lang.org/)
@@ -108,4 +76,4 @@ npm run desktop:package
 - [silk-wasm](https://www.npmjs.com/package/silk-wasm)、[@audio/decode-amr](https://www.npmjs.com/package/@audio/decode-amr)
 - [PyAV](https://github.com/PyAV-Org/PyAV)、[Pillow](https://python-pillow.org/)
 
-微信 WCDB zstd 字典及第三方许可说明保留在源码中；本项目自身以 MIT 许可开源。
+微信 WCDB zstd 字典和第三方许可说明保留在源码里，项目本身以 MIT 许可开源。
