@@ -1,0 +1,22 @@
+{
+  "name": "wepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wepo 微仓:iOS 微信聊天记录备份解析 + 微仓助手(Tauri)+ NAS 服务端导入与网页查看器(Node.js/SQLite)",
+  "workspaces": [
+    "packages/core",
+    "packages/importer",
+    "packages/desktop"
+  ],
+  "scripts": {
+    "server": "npm --prefix packages/server run start",
+    "desktop:dev": "npm run dev -w @wepo/desktop",
+    "desktop:build": "npm run build -w @wepo/desktop",
+    "desktop:package": "bash scripts/package-tauri.sh",
+    "desktop:setup": "npm run setup:sidecar -w @wepo/desktop",
+    "test": "node --test packages/core/test/parser.test.js packages/core/test/zip.test.js packages/core/test/avatar-downloader.test.js packages/core/test/emoji-cache.test.js packages/core/test/wcdb-zstd.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

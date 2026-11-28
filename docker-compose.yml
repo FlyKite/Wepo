@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  wepo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wepo
+    restart: unless-stopped
+    ports:
+      - "3800:3800"
+    environment:
+      # 可选:不设置时在 /data/config.json 自动生成,并输出到容器启动日志
+      WEPO_SECRET: ${WEPO_SECRET:-}
+      TZ: ${TZ:-Asia/Shanghai}
+    volumes:
+      # SQLite、媒体、导入任务状态和 config.json
+      - ./data:/data
+      # NAS 上的 iOS 备份根目录,只读挂载
+      - ${BACKUP_DIR:-./backups}:/backups:ro

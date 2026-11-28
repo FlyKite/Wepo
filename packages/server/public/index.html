@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ededed" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; worker-src 'self'; manifest-src 'self'" />
+  <title>微仓</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <meta name="application-name" content="微仓" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="微仓" />
+
+  <script src="theme-init.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20261125k" />
+</head>
+<body>
+  <div id="app">
+    <!-- 移动端顶部导航栏(iOS 微信风格) -->
+    <header id="mobileNav">
+      <button id="mobileBackBtn" class="hidden" type="button" aria-label="返回">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+      <div id="mobileNavTitle">微信</div>
+      <button id="mobileChatSearchBtn" class="hidden" type="button" aria-label="搜索聊天记录" title="搜索聊天记录">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+          <path d="M15.4 15.4 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <button id="mobileContactDetailBtn" class="hidden" type="button" aria-label="联系人详情" title="联系人详情">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+          <circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+          <path d="M8 17c.7-2 2.1-3 4-3s3.3 1 4 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </header>
+
+    <!-- 窗口主体 -->
+    <div id="windowBody">
+      <!-- 左侧窄导航栏(微信 PC 风格) -->
+      <nav id="sidebar">
+        <div class="traffic-lights" aria-hidden="true">
+          <span class="traffic-light red"></span>
+          <span class="traffic-light yellow"></span>
+          <span class="traffic-light green"></span>
+        </div>
+        <div class="nav-avatar" id="navAvatar" title="微信聊天记录"></div>
+        <div class="nav-btns">
+          <button class="nav-btn active" data-view="chats" title="聊天">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.7 1.4 5.1 3.7 6.7-.1.9-.5 2.4-1.5 3.6 1.8-.1 3.4-.7 4.5-1.3 1 .3 2.1.5 3.3.5 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+          </button>
+          <button class="nav-btn" data-view="contacts" title="通讯录">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg>
+          </button>
+        </div>
+        <div class="nav-bottom">
+          <button class="nav-btn" data-view="data" title="我">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 3.2a3.4 3.4 0 1 1 0 6.8 3.4 3.4 0 0 1 0-6.8zm0 14.6a7.7 7.7 0 0 1-5.9-2.8c1.3-1.9 3.4-3 5.9-3s4.6 1.1 5.9 3A7.7 7.7 0 0 1 12 19.8z"/></svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- 中间列表面板 -->
+      <div id="listPanel">
+        <div id="listHeader">
+          <button id="listBackBtn" class="list-back-btn hidden" type="button" aria-label="返回">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div id="listSearchWrap" class="search-wrap">
+            <input id="searchBox" type="text" placeholder="搜索联系人" maxlength="100" />
+            <button id="listSearchClearBtn" class="search-clear hidden" type="button" aria-label="清空搜索" title="清空">×</button>
+          </div>
+        </div>
+        <div id="contactList"><div class="empty-tip" style="padding-top:60px">正在加载...</div></div>
+        <div id="listMore" class="hidden" role="status" aria-live="polite">
+          <div class="loading-indicator"><span class="spinner"></span><span>加载中...</span></div>
+        </div>
+
+        <!-- 通讯录子页面:标签 / 群聊 -->
+        <section id="contactSubpage" class="hidden" aria-label="通讯录子页面">
+          <header id="contactSubpageHeader">
+            <button id="contactSubpageBackBtn" class="list-back-btn" type="button" aria-label="返回">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <div id="contactSubpageTitle"></div>
+          </header>
+          <div id="contactSubpageBody"></div>
+        </section>
+
+        <!-- 搜索页:移动端全屏二级页;PC/分栏时替换消息列表 -->
+        <section id="searchPageView" class="hidden" aria-label="搜索">
+          <header id="searchPageHeader">
+            <div id="searchPageHeaderInner">
+              <button id="searchPageBackBtn" class="search-page-back-btn" type="button" aria-label="返回">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="search-wrap">
+                <span class="search-page-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="16" height="16">
+                    <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                    <path d="M15.4 15.4 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </span>
+                <input id="searchPageInput" type="text" placeholder="搜索联系人、群聊、聊天记录" maxlength="100" autocomplete="off" spellcheck="false" />
+                <button id="searchPageClearBtn" class="search-clear hidden" type="button" aria-label="清空搜索" title="清空">×</button>
+              </div>
+            </div>
+          </header>
+          <div id="searchPageBody">
+            <div id="searchPageContent"></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 右侧主区域 -->
+      <main id="mainPanel">
+        <!-- 聊天视图 -->
+        <section id="chatView" class="view">
+          <header class="panel-header">
+            <button id="chatDateJumpBackBtn" class="chat-search-open-btn chat-date-jump-back hidden" type="button" aria-label="返回日期日历" title="返回日期日历">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <div id="chatTitle" class="chat-title"></div>
+            <button id="chatSearchOpenBtn" class="chat-search-open-btn hidden" type="button" aria-label="搜索聊天记录" title="搜索聊天记录">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                <path d="M15.4 15.4 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <button id="chatContactDetailBtn" class="chat-search-open-btn hidden" type="button" aria-label="联系人详情" title="联系人详情">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                <circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+                <path d="M8 17c.7-2 2.1-3 4-3s3.3 1 4 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+              </svg>
+            </button>
+          </header>
+          <div id="chatSearchFilterBar" class="hidden">
+            <span id="chatSearchFilterText"></span>
+            <button id="chatSearchFilterClearBtn" type="button">清除搜索</button>
+          </div>
+          <div id="messageArea">
+            <div id="loadMore" class="hidden" role="status" aria-live="polite">
+              <div class="loading-indicator"><span class="spinner"></span><span>正在加载更早的消息...</span></div>
+            </div>
+            <div id="messageList"></div>
+            <div id="loadMoreNewer" class="hidden" role="status" aria-live="polite">
+              <div class="loading-indicator"><span class="spinner"></span><span>正在加载更新的消息...</span></div>
+            </div>
+          </div>
+          <div id="chatComposer" class="hidden" aria-hidden="true">
+            <input id="chatComposerInput" class="chat-composer-input" type="text" placeholder="输入消息..." disabled tabindex="-1" aria-disabled="true" />
+            <button id="chatComposerSendBtn" class="chat-composer-send" type="button" disabled tabindex="-1" aria-disabled="true">发送</button>
+          </div>
+          <button id="quoteReturnBtn" class="quote-return-btn hidden" type="button">回到引用位置</button>
+
+          <!-- 当前会话内搜索页:移动端全屏;PC/分栏覆盖聊天面板 -->
+          <section id="chatSearchPageView" class="hidden" aria-label="搜索聊天记录">
+            <header id="chatSearchPageHeader">
+              <div id="chatSearchPageHeaderInner">
+                <div class="search-wrap">
+                  <span class="search-page-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                      <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                      <path d="M15.4 15.4 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </span>
+                  <input id="chatSearchPageInput" type="text" placeholder="搜索当前聊天记录" maxlength="100" autocomplete="off" spellcheck="false" />
+                  <button id="chatSearchPageClearBtn" class="search-clear hidden" type="button" aria-label="清空搜索" title="清空">×</button>
+                </div>
+                <button id="chatSearchPageCancelBtn" class="search-page-cancel" type="button">取消</button>
+              </div>
+            </header>
+            <div id="chatSearchBrowseHeader" class="hidden"></div>
+            <div id="chatSearchPageBody">
+              <div id="chatSearchPageContent"></div>
+            </div>
+          </section>
+
+          <!-- 从私聊进入的联系人详情页:覆盖聊天面板,返回后聊天状态保持不变 -->
+          <section id="chatContactDetailPage" class="hidden" aria-label="联系人详情">
+            <header id="chatContactDetailHeader" class="panel-header">
+              <button id="chatContactDetailBackBtn" class="list-back-btn" type="button" aria-label="返回聊天">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="chat-title">联系人详情</div>
+            </header>
+            <div id="chatContactDetailBody"></div>
+          </section>
+
+          <!-- 合并转发的聊天记录详情页:覆盖聊天面板 -->
+          <section id="chatRecordDetailPage" class="hidden" aria-label="聊天记录详情">
+            <header id="chatRecordDetailHeader">
+              <button id="chatRecordDetailBackBtn" class="chat-record-back" type="button" aria-label="返回">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true">
+                  <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div id="chatRecordDetailHeading">
+                <div id="chatRecordDetailTitle"></div>
+                <div id="chatRecordDetailDate"></div>
+              </div>
+              <span class="chat-record-more" aria-hidden="true">•••</span>
+            </header>
+            <div id="chatRecordDetailBody"></div>
+          </section>
+        </section>
+
+        <!-- 通讯录详情视图 -->
+        <section id="contactView" class="view hidden">
+          <header class="panel-header">
+            <div class="chat-title">通讯录</div>
+          </header>
+          <div id="contactDetail"></div>
+        </section>
+
+        <!-- 数据管理视图 -->
+        <section id="dataView" class="view hidden">
+          <header class="panel-header">
+            <button id="dataPanelBackBtn" class="data-panel-back hidden" type="button" aria-label="返回我">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <div class="chat-title" id="dataViewTitle">我</div>
+          </header>
+          <div id="dataBody"></div>
+        </section>
+
+        <!-- 空状态 -->
+        <section id="emptyView" class="view">
+          <div class="empty-tip" id="emptyTip">请选择左侧会话开始查看聊天记录</div>
+        </section>
+      </main>
+    </div>
+
+    <!-- 移动端底部标签栏(iOS 微信风格) -->
+    <nav id="tabBar">
+      <button class="tab-item active" data-view="chats">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.7 1.4 5.1 3.7 6.7-.1.9-.5 2.4-1.5 3.6 1.8-.1 3.4-.7 4.5-1.3 1 .3 2.1.5 3.3.5 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+        <span>消息</span>
+      </button>
+      <button class="tab-item" data-view="contacts">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4 0-8 2-8 5v2h16v-2c0-3-4-5-8-5z"/></svg>
+        <span>联系人</span>
+      </button>
+      <button class="tab-item" data-view="data">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 3.2a3.4 3.4 0 1 1 0 6.8 3.4 3.4 0 0 1 0-6.8zm0 14.6a7.7 7.7 0 0 1-5.9-2.8c1.3-1.9 3.4-3 5.9-3s4.6 1.1 5.9 3A7.7 7.7 0 0 1 12 19.8z"/></svg>
+        <span>我</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- 账号切换 -->
+  <div id="userSwitcher" class="hidden" role="dialog" aria-modal="true" aria-label="切换账号">
+    <div class="user-sheet">
+      <div class="user-sheet-head">
+        <span>切换账号</span>
+        <button id="userSwitcherClose" type="button">关闭</button>
+      </div>
+      <div class="user-list" id="userList"></div>
+    </div>
+  </div>
+
+  <!-- 退出登录确认 -->
+  <div id="logoutDialog" class="hidden" role="dialog" aria-modal="true" aria-labelledby="logoutDialogTitle">
+    <div class="logout-dialog-card">
+      <div class="logout-dialog-title" id="logoutDialogTitle">退出登录</div>
+      <div class="logout-dialog-desc">确定要退出登录吗？退出后会清除本地登录信息和缓存，需要重新输入 Secret。</div>
+      <div class="logout-dialog-actions">
+        <button id="logoutCancelBtn" type="button">取消</button>
+        <button id="logoutConfirmBtn" type="button" class="danger">确定</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 大图查看器 -->
+  <div id="imageViewer" class="hidden" role="dialog" aria-modal="true" aria-label="查看图片" tabindex="-1">
+    <img id="imageViewerImg" alt="" draggable="false" />
+  </div>
+
+  <!-- 视频查看器 -->
+  <div id="videoViewer" class="hidden" role="dialog" aria-modal="true" aria-label="查看视频" tabindex="-1">
+    <video id="videoViewerVideo" controls playsinline></video>
+    <button id="videoViewerClose" type="button" aria-label="关闭">×</button>
+  </div>
+
+  <!-- 分页加载浮层:不占用列表布局,避免加载时列表跳动 -->
+  <div id="pagingBusy" class="paging-busy hidden" role="status" aria-live="polite">
+    <span class="spinner"></span><span>加载中...</span>
+  </div>
+
+  <!-- 服务器端 NAS 导入进度:微仓助手触发导入时,网页端同步显示 -->
+  <div id="serverImportBanner" class="hidden" role="status" aria-live="polite">
+    <div class="server-import-head">
+      <span id="serverImportTitle">服务器正在导入备份</span>
+      <span id="serverImportPercent"></span>
+      <button id="serverImportRefreshBtn" class="hidden" type="button">刷新页面</button>
+    </div>
+    <div id="serverImportDevice"></div>
+    <div class="server-import-track"><div id="serverImportFill"></div></div>
+    <div id="serverImportText"></div>
+  </div>
+
+  <!-- 鉴权遮罩:首次访问或 Secret 失效时显示 -->
+  <div id="authOverlay" class="hidden">
+    <div id="authCard">
+      <div class="auth-logo">微</div>
+      <h2>微仓</h2>
+      <input type="password" id="authSecretInput" placeholder="请输入Secret" autocomplete="off" spellcheck="false" />
+      <div class="auth-error hidden" id="authError"></div>
+      <button class="green-btn auth-btn" id="authSubmitBtn">进入</button>
+    </div>
+  </div>
+
+  <script src="app.js?v=20261125k"></script>
+</body>
+</html>

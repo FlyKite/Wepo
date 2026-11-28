@@ -1,0 +1,9 @@
+{
+  "name": "@wepo/importer",
+  "version": "1.0.0",
+  "description": "微仓导入执行器:解析 iOS 备份并分批上传到服务端",
+  "main": "src/import-runner.js",
+  "dependencies": {
+    "@wepo/core": "*"
+  }
+}

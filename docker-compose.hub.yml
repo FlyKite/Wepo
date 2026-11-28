@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  wepo:
+    # 默认使用 flykite/wepo:latest；可在 .env 中覆盖为固定版本
+    image: ${WEPO_IMAGE:-flykite/wepo:latest}
+    container_name: wepo
+    restart: unless-stopped
+    ports:
+      - "3800:3800"
+    environment:
+      # 留空时使用容器内 /data/config.json 自动生成并持久化的 Secret,并输出到启动日志
+      WEPO_SECRET: ${WEPO_SECRET:-}
+      TZ: ${TZ:-Asia/Shanghai}
+    volumes:
+      # SQLite、媒体、任务状态和 config.json
+      - ./data:/data
+      # NAS iOS 备份根目录，只读挂载
+      - ${BACKUP_DIR:-./backups}:/backups:ro

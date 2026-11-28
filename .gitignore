@@ -83,9 +83,6 @@ out
 dist
 .output
 
-# NitroJS
-.nitro/
-
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -148,10 +145,32 @@ vite.config.ts.timestamp-*
 # Astro generated types
 .astro/
 
-# Turbo Repo (https://turborepo.dev/)
+# Turbo Repo
 .turbo
 
-# Nx (https://nx.dev/)
-.nx/cache
-.nx/workspace-data
-.nx/migrate-runs
+# Wepo runtime/user data
+.env
+.env.*
+!.env.example
+/config.json
+/data/
+/backups/
+/WCDB_Contact*.sqlite
+/WCDB_Contact*.readable.sqlite
+/*.jpg
+/*.jpeg
+/*.png
+/*.PNG
+packages/server/data/
+packages/server/.wxgf-venv/
+packages/desktop/src-tauri/target/
+packages/desktop/src-tauri/binaries/node-*
+packages/desktop/src-tauri/resources/importer/node_modules/
+packages/desktop/src-tauri/resources/importer/NODE-LICENSE
+packages/desktop/src-tauri/gen/schemas/
+# local-only asset maintenance scripts, not part of the public repo
+.claude/
+*.swp
+/build/
+/release/
+.DS_Store

@@ -1,0 +1,17 @@
+{
+  "name": "@wepo/server",
+  "version": "1.0.0",
+  "description": "Wepo 微仓服务端:NAS 备份扫描/导入、SQLite 存储、查询接口与微信 PC 风格网页查看器",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@audio/decode-amr": "^1.3.1",
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "silk-wasm": "^3.7.1"
+  }
+}

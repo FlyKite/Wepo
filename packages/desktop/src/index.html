@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'self' http: https:; script-src 'self'" />
+  <title>微仓助手</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+    <section id="setupView" class="hidden">
+      <div class="setup-card">
+        <h1>连接服务端</h1>
+        <p class="setup-desc">首次使用需要填写服务端地址和访问 Secret。</p>
+        <div class="setup-field">
+          <label for="serverUrlInput">服务器地址</label>
+          <input type="text" id="serverUrlInput" placeholder="http://127.0.0.1:3800" spellcheck="false" />
+        </div>
+        <div class="setup-field">
+          <label for="secretInput">访问 Secret</label>
+          <input type="password" id="secretInput" placeholder="项目根目录 config.json 中的 secret" autocomplete="off" spellcheck="false" />
+        </div>
+        <div class="setup-status" id="connStatus"></div>
+        <div class="setup-actions">
+          <button class="ghost-btn hidden" id="cancelServerBtn" type="button">取消</button>
+          <button class="green-btn" id="saveServerBtn" type="button">确定</button>
+        </div>
+        <p class="setup-tip">Secret 可在项目根目录的 config.json（Docker 部署为 ./data/config.json）中查看；网页查看器也需要它。</p>
+      </div>
+    </section>
+
+    <div id="mainView" class="hidden">
+      <section class="card server-card">
+        <div class="row server-row">
+          <label>服务器地址</label>
+          <span id="currentServerUrl" class="server-url"></span>
+          <button class="ghost-btn" id="modifyServerBtn" type="button">变更</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>NAS 备份目录</h2>
+        <div class="row">
+          <label>服务器备份</label>
+          <select id="serverBackupSelect"></select>
+          <button class="ghost-btn" id="refreshServerBackupsBtn" type="button">刷新</button>
+        </div>
+        <div class="hint" id="serverBackupHint">正在读取服务器备份目录...</div>
+        <div class="row">
+          <label>导入媒体数据</label>
+          <label class="switch" aria-label="导入媒体数据">
+            <input type="checkbox" id="serverIncludeMediaChk" checked />
+            <span class="switch-track"><span class="switch-thumb"></span></span>
+          </label>
+        </div>
+        <div class="row">
+          <label></label>
+          <button class="green-btn" id="startServerImportBtn" type="button" disabled>导入所选备份</button>
+          <button class="danger-btn hidden" id="cancelServerImportBtn" type="button">停止</button>
+        </div>
+        <div class="progress-track hidden" id="serverImportProgressTrack"><div class="progress-fill" id="serverImportProgressFill"></div></div>
+        <div class="hint" id="serverImportStatus"></div>
+      </section>
+
+      <section class="card">
+        <h2>本机备份</h2>
+        <div class="row">
+          <label>备份位置</label>
+          <input type="text" id="backupInput" placeholder="iOS 备份目录或 zip 压缩包" readonly />
+          <div class="backup-picker">
+            <button class="ghost-btn" id="pickBackupBtn" type="button" aria-haspopup="menu" aria-expanded="false">选择备份</button>
+            <div id="backupMenu" class="picker-menu hidden" role="menu">
+              <button id="pickDirBtn" type="button" role="menuitem">选择备份目录</button>
+              <button id="pickZipBtn" type="button" role="menuitem">选择备份 zip 包</button>
+            </div>
+          </div>
+        </div>
+        <div class="row hidden" id="resumeRow">
+          <label>未完成导入</label>
+          <select id="resumeBackupSelect"></select>
+          <button class="ghost-btn" id="resumeImportBtn" type="button">继续导入</button>
+        </div>
+        <div class="hint hidden" id="resumeHint"></div>
+        <div class="row media-row">
+          <label>导入媒体数据</label>
+          <label class="switch" aria-label="导入媒体数据">
+            <input type="checkbox" id="includeMediaChk" checked />
+            <span class="switch-track"><span class="switch-thumb"></span></span>
+          </label>
+        </div>
+        <div class="row">
+          <label></label>
+          <button class="green-btn" id="startImportBtn" type="button">开始解析并导入</button>
+          <button class="danger-btn hidden" id="cancelImportBtn" type="button">取消</button>
+        </div>
+        <div class="progress-track hidden" id="importProgressTrack"><div class="progress-fill" id="importProgressFill"></div></div>
+        <div class="hint" id="importStatus"></div>
+        <div id="importLog" class="hidden"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="tauri-bridge.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

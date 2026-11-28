@@ -1,0 +1,2624 @@
+[
+    {
+        "preTag": "[",
+        "postTag": "]",
+        "keys": [
+            {
+                "key": "666",
+                "file": "wx-666"
+            },
+            {
+                "key": "Aaagh!",
+                "file": "wx-pen-huo"
+            },
+            {
+                "key": "Angry",
+                "file": "wx-fa-nu"
+            },
+            {
+                "key": "Awesome",
+                "file": "wx-666"
+            },
+            {
+                "key": "Awkward",
+                "file": "wx-gan-ga"
+            },
+            {
+                "key": "Bah！L",
+                "file": "wx-zuo-heng-heng"
+            },
+            {
+                "key": "Bah！R",
+                "file": "wx-you-heng-heng"
+            },
+            {
+                "key": "Basketball",
+                "file": "wx-lan-qiu"
+            },
+            {
+                "key": "Beckon",
+                "file": "wx-gou-yin"
+            },
+            {
+                "key": "Beer",
+                "file": "wx-pi-jiu"
+            },
+            {
+                "key": "Blessing",
+                "file": "wx-fu"
+            },
+            {
+                "key": "Blowkiss",
+                "file": "wx-fei-wen"
+            },
+            {
+                "key": "Blush",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "Bomb",
+                "file": "wx-zha-dan"
+            },
+            {
+                "key": "Boring",
+                "file": "wx-fan-bai-yan"
+            },
+            {
+                "key": "Broken",
+                "file": "wx-beng-kui"
+            },
+            {
+                "key": "BrokenHeart",
+                "file": "wx-xin-sui"
+            },
+            {
+                "key": "Bye",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "Cake",
+                "file": "wx-dan-gao"
+            },
+            {
+                "key": "Candle",
+                "file": "wx-la-zhu"
+            },
+            {
+                "key": "Chick",
+                "file": "wx-xiao-ji"
+            },
+            {
+                "key": "Chuckle",
+                "file": "wx-tou-xiao"
+            },
+            {
+                "key": "Clap",
+                "file": "wx-gu-zhang"
+            },
+            {
+                "key": "Cleaver",
+                "file": "wx-cai-dao"
+            },
+            {
+                "key": "Coffee",
+                "file": "wx-ka-fei"
+            },
+            {
+                "key": "Commando",
+                "file": "wx-you-xian"
+            },
+            {
+                "key": "Concerned",
+                "file": "wx-zhou-mei"
+            },
+            {
+                "key": "CoolGuy",
+                "file": "wx-de-yi"
+            },
+            {
+                "key": "Cry",
+                "file": "wx-da-ku"
+            },
+            {
+                "key": "Dagger",
+                "file": "wx-dao"
+            },
+            {
+                "key": "Determined",
+                "file": "wx-fen-dou"
+            },
+            {
+                "key": "Dizzy",
+                "file": "wx-yun"
+            },
+            {
+                "key": "Doge",
+                "file": "wx-wang-chai"
+            },
+            {
+                "key": "Dramatic",
+                "file": "wx-hui-tou"
+            },
+            {
+                "key": "Drool",
+                "file": "wx-se"
+            },
+            {
+                "key": "Drowsy",
+                "file": "wx-kun"
+            },
+            {
+                "key": "Duh",
+                "file": "wx-wu-yu"
+            },
+            {
+                "key": "Emm",
+                "file": "wx-yi-yan-nan-jin"
+            },
+            {
+                "key": "Emm",
+                "file": "wx-yi-yan-nan-jin"
+            },
+            {
+                "key": "Facepalm",
+                "file": "wx-wu-lian"
+            },
+            {
+                "key": "Fight",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "Firecracker",
+                "file": "wx-bao-zhu"
+            },
+            {
+                "key": "Fireworks",
+                "file": "wx-yan-hua"
+            },
+            {
+                "key": "Fist",
+                "file": "wx-quan-tou"
+            },
+            {
+                "key": "Flushed",
+                "file": "wx-lian-hong"
+            },
+            {
+                "key": "Frown",
+                "file": "wx-nan-guo"
+            },
+            {
+                "key": "Gift",
+                "file": "wx-li-wu"
+            },
+            {
+                "key": "GoForIt",
+                "file": "wx-jia-you"
+            },
+            {
+                "key": "Grimace",
+                "file": "wx-pie-zui"
+            },
+            {
+                "key": "Grin",
+                "file": "wx-ci-ya"
+            },
+            {
+                "key": "Hammer",
+                "file": "wx-qiao-da"
+            },
+            {
+                "key": "Happy",
+                "file": "wx-xiao-lian"
+            },
+            {
+                "key": "Heart",
+                "file": "wx-ai-xin"
+            },
+            {
+                "key": "Hey",
+                "file": "wx-hou-hei"
+            },
+            {
+                "key": "Hooray",
+                "file": "wx-ji-dong"
+            },
+            {
+                "key": "Hug",
+                "file": "wx-yong-bao"
+            },
+            {
+                "key": "Hungry",
+                "file": "wx-ji-e"
+            },
+            {
+                "key": "Hurt",
+                "file": "wx-ku-se"
+            },
+            {
+                "key": "InLove",
+                "file": "wx-ai-qing"
+            },
+            {
+                "key": "Joyful",
+                "file": "wx-yu-kuai"
+            },
+            {
+                "key": "JumpRope",
+                "file": "wx-tiao-sheng"
+            },
+            {
+                "key": "KeepFighting",
+                "file": "wx-jia-you-jia-you"
+            },
+            {
+                "key": "Kiss",
+                "file": "wx-qin-qin"
+            },
+            {
+                "key": "Kotow",
+                "file": "wx-ke-tou"
+            },
+            {
+                "key": "Ladybug",
+                "file": "wx-piao-chong"
+            },
+            {
+                "key": "Laugh",
+                "file": "wx-da-xiao"
+            },
+            {
+                "key": "Let Down",
+                "file": "wx-shi-wang"
+            },
+            {
+                "key": "LetMeSee",
+                "file": "wx-rang-wo-kan-kan"
+            },
+            {
+                "key": "Lightning",
+                "file": "wx-shan-dian"
+            },
+            {
+                "key": "Lips",
+                "file": "wx-zui-chun"
+            },
+            {
+                "key": "Lol",
+                "file": "wx-po-ti-wei-xiao"
+            },
+            {
+                "key": "Meditate",
+                "file": "wx-jie-wu"
+            },
+            {
+                "key": "Moon",
+                "file": "wx-yue-liang"
+            },
+            {
+                "key": "Moue",
+                "file": "wx-pie-zui-2"
+            },
+            {
+                "key": "Moue",
+                "file": "wx-pie-zui-2"
+            },
+            {
+                "key": "MyBad",
+                "file": "wx-da-lian"
+            },
+            {
+                "key": "NO",
+                "file": "wx-bu-xing"
+            },
+            {
+                "key": "NO",
+                "file": "wx-bu-xing"
+            },
+            {
+                "key": "NoProb",
+                "file": "wx-hao-de"
+            },
+            {
+                "key": "NosePick",
+                "file": "wx-kou-bi"
+            },
+            {
+                "key": "Nuh-uh",
+                "file": "wx-bu-xing"
+            },
+            {
+                "key": "OK",
+                "file": "wx-ok"
+            },
+            {
+                "key": "OK",
+                "file": "wx-ok"
+            },
+            {
+                "key": "OK",
+                "file": "wx-ok"
+            },
+            {
+                "key": "OMG",
+                "file": "wx-tian-a"
+            },
+            {
+                "key": "Onlooker",
+                "file": "wx-chi-gua"
+            },
+            {
+                "key": "Packet",
+                "file": "wx-hong-bao"
+            },
+            {
+                "key": "Packet",
+                "file": "wx-hong-bao"
+            },
+            {
+                "key": "Panic",
+                "file": "wx-jing-kong"
+            },
+            {
+                "key": "Party",
+                "file": "wx-qing-zhu"
+            },
+            {
+                "key": "Peace",
+                "file": "wx-sheng-li"
+            },
+            {
+                "key": "Pig",
+                "file": "wx-zhu-tou"
+            },
+            {
+                "key": "PingPong",
+                "file": "wx-ping-pang"
+            },
+            {
+                "key": "Pinky",
+                "file": "wx-cha-jin"
+            },
+            {
+                "key": "Pooh-pooh",
+                "file": "wx-bi-shi"
+            },
+            {
+                "key": "Poop",
+                "file": "wx-bian-bian"
+            },
+            {
+                "key": "Puke",
+                "file": "wx-tu"
+            },
+            {
+                "key": "Pup",
+                "file": "wx-xiao-gou"
+            },
+            {
+                "key": "Respect",
+                "file": "wx-she-hui-she-hui"
+            },
+            {
+                "key": "Rice",
+                "file": "wx-fan"
+            },
+            {
+                "key": "Rich",
+                "file": "wx-fa"
+            },
+            {
+                "key": "RockOn",
+                "file": "wx-ai-ni"
+            },
+            {
+                "key": "Rose",
+                "file": "wx-mei-gui"
+            },
+            {
+                "key": "Ruthless",
+                "file": "wx-ku"
+            },
+            {
+                "key": "Salute",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "Scold",
+                "file": "wx-zhou-ma"
+            },
+            {
+                "key": "Scowl",
+                "file": "wx-fa-dai"
+            },
+            {
+                "key": "Scream",
+                "file": "wx-zhua-kuang"
+            },
+            {
+                "key": "Shake",
+                "file": "wx-wo-shou"
+            },
+            {
+                "key": "Shame",
+                "file": "wx-qiu-da-le"
+            },
+            {
+                "key": "Shhh",
+                "file": "wx-xu"
+            },
+            {
+                "key": "Shocked",
+                "file": "wx-yi-wen"
+            },
+            {
+                "key": "Shrunken",
+                "file": "wx-wei-qu"
+            },
+            {
+                "key": "Shy",
+                "file": "wx-hai-xiu"
+            },
+            {
+                "key": "Sick",
+                "file": "wx-sheng-bing"
+            },
+            {
+                "key": "Sigh",
+                "file": "wx-tan-qi"
+            },
+            {
+                "key": "Silent",
+                "file": "wx-bi-zui"
+            },
+            {
+                "key": "Skull",
+                "file": "wx-ku-lou"
+            },
+            {
+                "key": "Sleep",
+                "file": "wx-shui"
+            },
+            {
+                "key": "Slight",
+                "file": "wx-bai-yan"
+            },
+            {
+                "key": "Sly",
+                "file": "wx-yin-xian"
+            },
+            {
+                "key": "Smart",
+                "file": "wx-ji-zhi"
+            },
+            {
+                "key": "Smile",
+                "file": "wx-wei-xiao"
+            },
+            {
+                "key": "Smirk",
+                "file": "wx-jian-xiao"
+            },
+            {
+                "key": "Smooch",
+                "file": "wx-xian-wen"
+            },
+            {
+                "key": "Smug",
+                "file": "wx-ao-man"
+            },
+            {
+                "key": "Sob",
+                "file": "wx-liu-lei"
+            },
+            {
+                "key": "Soccer",
+                "file": "wx-zu-qiu"
+            },
+            {
+                "key": "Speechless",
+                "file": "wx-ca-han"
+            },
+            {
+                "key": "Sun",
+                "file": "wx-tai-yang"
+            },
+            {
+                "key": "Surprise",
+                "file": "wx-jing-ya"
+            },
+            {
+                "key": "Surrender",
+                "file": "wx-tou-xiang"
+            },
+            {
+                "key": "Sweat",
+                "file": "wx-liu-han"
+            },
+            {
+                "key": "Sweats",
+                "file": "wx-han"
+            },
+            {
+                "key": "TaiChi L",
+                "file": "wx-zuo-tai-ji"
+            },
+            {
+                "key": "TaiChi R",
+                "file": "wx-you-tai-ji"
+            },
+            {
+                "key": "Tea",
+                "file": "wx-cha"
+            },
+            {
+                "key": "TearingUp",
+                "file": "wx-kuai-ku-le"
+            },
+            {
+                "key": "Terror",
+                "file": "wx-kong-ju"
+            },
+            {
+                "key": "ThumbsDown",
+                "file": "wx-ruo"
+            },
+            {
+                "key": "ThumbsUp",
+                "file": "wx-qiang"
+            },
+            {
+                "key": "Toasted",
+                "file": "wx-shuai"
+            },
+            {
+                "key": "Tongue",
+                "file": "wx-diao-pi"
+            },
+            {
+                "key": "Tormented",
+                "file": "wx-feng-le"
+            },
+            {
+                "key": "Tremble",
+                "file": "wx-fa-dou"
+            },
+            {
+                "key": "Trick",
+                "file": "wx-huai-xiao"
+            },
+            {
+                "key": "Twirl",
+                "file": "wx-zhuan-quan"
+            },
+            {
+                "key": "Waddle",
+                "file": "wx-tiao-tiao"
+            },
+            {
+                "key": "Watermelon",
+                "file": "wx-xi-gua"
+            },
+            {
+                "key": "Wave",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "Whimper",
+                "file": "wx-ke-lian"
+            },
+            {
+                "key": "Wilt",
+                "file": "wx-diao-xie"
+            },
+            {
+                "key": "Worship",
+                "file": "wx-he-shi"
+            },
+            {
+                "key": "Wow",
+                "file": "wx-wa"
+            },
+            {
+                "key": "Wrath",
+                "file": "wx-xia"
+            },
+            {
+                "key": "Yawn",
+                "file": "wx-ha-qian"
+            },
+            {
+                "key": "Yeah!",
+                "file": "wx-ou-ye"
+            },
+            {
+                "key": "[囧]",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "一言難盡",
+                "file": "wx-yi-yan-nan-jin"
+            },
+            {
+                "key": "乒乓",
+                "file": "wx-ping-pang"
+            },
+            {
+                "key": "乒乓",
+                "file": "wx-ping-pang"
+            },
+            {
+                "key": "乱舞",
+                "file": "wx-jie-wu"
+            },
+            {
+                "key": "亂舞",
+                "file": "wx-jie-wu"
+            },
+            {
+                "key": "亲亲",
+                "file": "wx-qin-qin"
+            },
+            {
+                "key": "便便",
+                "file": "wx-bian-bian"
+            },
+            {
+                "key": "便便",
+                "file": "wx-bian-bian"
+            },
+            {
+                "key": "偷笑",
+                "file": "wx-tou-xiao"
+            },
+            {
+                "key": "偷笑",
+                "file": "wx-tou-xiao"
+            },
+            {
+                "key": "傲慢",
+                "file": "wx-ao-man"
+            },
+            {
+                "key": "傲慢",
+                "file": "wx-ao-man"
+            },
+            {
+                "key": "再見",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "再见",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "冷汗",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "冷汗",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "凋谢",
+                "file": "wx-diao-xie"
+            },
+            {
+                "key": "刀",
+                "file": "wx-dao"
+            },
+            {
+                "key": "刀",
+                "file": "wx-dao"
+            },
+            {
+                "key": "加油",
+                "file": "wx-jia-you"
+            },
+            {
+                "key": "加油",
+                "file": "wx-jia-you"
+            },
+            {
+                "key": "加油加油",
+                "file": "wx-jia-you-jia-you"
+            },
+            {
+                "key": "加油！",
+                "file": "wx-jia-you-jia-you"
+            },
+            {
+                "key": "勝利",
+                "file": "wx-sheng-li"
+            },
+            {
+                "key": "勾引",
+                "file": "wx-gou-yin"
+            },
+            {
+                "key": "勾引",
+                "file": "wx-gou-yin"
+            },
+            {
+                "key": "发呆",
+                "file": "wx-fa-dai"
+            },
+            {
+                "key": "发怒",
+                "file": "wx-fa-nu"
+            },
+            {
+                "key": "发抖",
+                "file": "wx-fa-dou"
+            },
+            {
+                "key": "可怜",
+                "file": "wx-ke-lian"
+            },
+            {
+                "key": "可憐",
+                "file": "wx-ke-lian"
+            },
+            {
+                "key": "右哼哼",
+                "file": "wx-you-heng-heng"
+            },
+            {
+                "key": "右哼哼",
+                "file": "wx-you-heng-heng"
+            },
+            {
+                "key": "右太极",
+                "file": "wx-you-tai-ji"
+            },
+            {
+                "key": "右太極",
+                "file": "wx-you-tai-ji"
+            },
+            {
+                "key": "叹气",
+                "file": "wx-tan-qi"
+            },
+            {
+                "key": "吃瓜",
+                "file": "wx-chi-gua"
+            },
+            {
+                "key": "吃西瓜",
+                "file": "wx-chi-gua"
+            },
+            {
+                "key": "合十",
+                "file": "wx-he-shi"
+            },
+            {
+                "key": "合十",
+                "file": "wx-he-shi"
+            },
+            {
+                "key": "吐",
+                "file": "wx-tu"
+            },
+            {
+                "key": "吐",
+                "file": "wx-tu"
+            },
+            {
+                "key": "吐舌",
+                "file": "wx-tu-she"
+            },
+            {
+                "key": "吓",
+                "file": "wx-xia"
+            },
+            {
+                "key": "吼嘿",
+                "file": "wx-hou-hei"
+            },
+            {
+                "key": "呲牙",
+                "file": "wx-ci-ya"
+            },
+            {
+                "key": "呲牙",
+                "file": "wx-ci-ya"
+            },
+            {
+                "key": "咒罵",
+                "file": "wx-zhou-ma"
+            },
+            {
+                "key": "咒骂",
+                "file": "wx-zhou-ma"
+            },
+            {
+                "key": "咖啡",
+                "file": "wx-ka-fei"
+            },
+            {
+                "key": "咖啡",
+                "file": "wx-ka-fei"
+            },
+            {
+                "key": "哇",
+                "file": "wx-wa"
+            },
+            {
+                "key": "哈欠",
+                "file": "wx-ha-qian"
+            },
+            {
+                "key": "哈欠",
+                "file": "wx-ha-qian"
+            },
+            {
+                "key": "啤酒",
+                "file": "wx-pi-jiu"
+            },
+            {
+                "key": "啤酒",
+                "file": "wx-pi-jiu"
+            },
+            {
+                "key": "嘆息",
+                "file": "wx-tan-qi"
+            },
+            {
+                "key": "嘘",
+                "file": "wx-xu"
+            },
+            {
+                "key": "嘴唇",
+                "file": "wx-zui-chun"
+            },
+            {
+                "key": "嘴唇",
+                "file": "wx-zui-chun"
+            },
+            {
+                "key": "嘿哈",
+                "file": "wx-hou-hei"
+            },
+            {
+                "key": "噓",
+                "file": "wx-xu"
+            },
+            {
+                "key": "噴火",
+                "file": "wx-pen-huo"
+            },
+            {
+                "key": "嚇",
+                "file": "wx-xia"
+            },
+            {
+                "key": "回头",
+                "file": "wx-hui-tou"
+            },
+            {
+                "key": "回頭",
+                "file": "wx-hui-tou"
+            },
+            {
+                "key": "囧",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "困",
+                "file": "wx-kun"
+            },
+            {
+                "key": "坏笑",
+                "file": "wx-huai-xiao"
+            },
+            {
+                "key": "壞笑",
+                "file": "wx-huai-xiao"
+            },
+            {
+                "key": "大哭",
+                "file": "wx-da-ku"
+            },
+            {
+                "key": "大哭",
+                "file": "wx-da-ku"
+            },
+            {
+                "key": "大笑",
+                "file": "wx-da-xiao"
+            },
+            {
+                "key": "天啊",
+                "file": "wx-tian-a"
+            },
+            {
+                "key": "太阳",
+                "file": "wx-tai-yang"
+            },
+            {
+                "key": "太陽",
+                "file": "wx-tai-yang"
+            },
+            {
+                "key": "失敬失敬",
+                "file": "wx-she-hui-she-hui"
+            },
+            {
+                "key": "失望",
+                "file": "wx-shi-wang"
+            },
+            {
+                "key": "失望",
+                "file": "wx-shi-wang"
+            },
+            {
+                "key": "奋斗",
+                "file": "wx-fen-dou"
+            },
+            {
+                "key": "奮鬥",
+                "file": "wx-fen-dou"
+            },
+            {
+                "key": "奸笑",
+                "file": "wx-jian-xiao"
+            },
+            {
+                "key": "奸笑",
+                "file": "wx-jian-xiao"
+            },
+            {
+                "key": "好的",
+                "file": "wx-hao-de"
+            },
+            {
+                "key": "委屈",
+                "file": "wx-wei-qu"
+            },
+            {
+                "key": "委屈",
+                "file": "wx-wei-qu"
+            },
+            {
+                "key": "害羞",
+                "file": "wx-hai-xiu"
+            },
+            {
+                "key": "害羞",
+                "file": "wx-hai-xiu"
+            },
+            {
+                "key": "小狗",
+                "file": "wx-xiao-gou"
+            },
+            {
+                "key": "小狗",
+                "file": "wx-xiao-gou"
+            },
+            {
+                "key": "小雞",
+                "file": "wx-xiao-ji"
+            },
+            {
+                "key": "尴尬",
+                "file": "wx-gan-ga"
+            },
+            {
+                "key": "尷尬",
+                "file": "wx-gan-ga"
+            },
+            {
+                "key": "崩潰",
+                "file": "wx-beng-kui"
+            },
+            {
+                "key": "左哼哼",
+                "file": "wx-zuo-heng-heng"
+            },
+            {
+                "key": "左哼哼",
+                "file": "wx-zuo-heng-heng"
+            },
+            {
+                "key": "左太极",
+                "file": "wx-zuo-tai-ji"
+            },
+            {
+                "key": "左太極",
+                "file": "wx-zuo-tai-ji"
+            },
+            {
+                "key": "差劲",
+                "file": "wx-cha-jin"
+            },
+            {
+                "key": "差勁",
+                "file": "wx-cha-jin"
+            },
+            {
+                "key": "庆祝",
+                "file": "wx-qing-zhu"
+            },
+            {
+                "key": "弱",
+                "file": "wx-ruo"
+            },
+            {
+                "key": "弱",
+                "file": "wx-ruo"
+            },
+            {
+                "key": "強",
+                "file": "wx-qiang"
+            },
+            {
+                "key": "强",
+                "file": "wx-qiang"
+            },
+            {
+                "key": "强壮",
+                "file": "wx-qiang-zhuang"
+            },
+            {
+                "key": "得意",
+                "file": "wx-de-yi"
+            },
+            {
+                "key": "得意",
+                "file": "wx-de-yi"
+            },
+            {
+                "key": "微笑",
+                "file": "wx-wei-xiao"
+            },
+            {
+                "key": "微笑",
+                "file": "wx-wei-xiao"
+            },
+            {
+                "key": "心碎",
+                "file": "wx-xin-sui"
+            },
+            {
+                "key": "心碎",
+                "file": "wx-xin-sui"
+            },
+            {
+                "key": "快哭了",
+                "file": "wx-kuai-ku-le"
+            },
+            {
+                "key": "快哭了",
+                "file": "wx-kuai-ku-le"
+            },
+            {
+                "key": "怄火",
+                "file": "wx-pen-huo"
+            },
+            {
+                "key": "恐惧",
+                "file": "wx-kong-ju"
+            },
+            {
+                "key": "恐懼",
+                "file": "wx-kong-ju"
+            },
+            {
+                "key": "悠閑",
+                "file": "wx-you-xian"
+            },
+            {
+                "key": "悠闲",
+                "file": "wx-you-xian"
+            },
+            {
+                "key": "惊恐",
+                "file": "wx-jing-kong"
+            },
+            {
+                "key": "惊讶",
+                "file": "wx-jing-ya"
+            },
+            {
+                "key": "愉快",
+                "file": "wx-yu-kuai"
+            },
+            {
+                "key": "愉快",
+                "file": "wx-yu-kuai"
+            },
+            {
+                "key": "愛你",
+                "file": "wx-ai-ni"
+            },
+            {
+                "key": "愛心",
+                "file": "wx-ai-xin"
+            },
+            {
+                "key": "愛情",
+                "file": "wx-ai-qing"
+            },
+            {
+                "key": "慶祝",
+                "file": "wx-qing-zhu"
+            },
+            {
+                "key": "憨笑",
+                "file": "wx-da-xiao"
+            },
+            {
+                "key": "打脸",
+                "file": "wx-da-lian"
+            },
+            {
+                "key": "打臉",
+                "file": "wx-da-lian"
+            },
+            {
+                "key": "抓狂",
+                "file": "wx-zhua-kuang"
+            },
+            {
+                "key": "抓狂",
+                "file": "wx-zhua-kuang"
+            },
+            {
+                "key": "投降",
+                "file": "wx-tou-xiang"
+            },
+            {
+                "key": "投降",
+                "file": "wx-tou-xiang"
+            },
+            {
+                "key": "抠鼻",
+                "file": "wx-kou-bi"
+            },
+            {
+                "key": "抱拳",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "抱拳",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "拥抱",
+                "file": "wx-yong-bao"
+            },
+            {
+                "key": "拳头",
+                "file": "wx-quan-tou"
+            },
+            {
+                "key": "拳頭",
+                "file": "wx-quan-tou"
+            },
+            {
+                "key": "捂脸",
+                "file": "wx-wu-lian"
+            },
+            {
+                "key": "掩面",
+                "file": "wx-wu-lian"
+            },
+            {
+                "key": "握手",
+                "file": "wx-wo-shou"
+            },
+            {
+                "key": "握手",
+                "file": "wx-wo-shou"
+            },
+            {
+                "key": "摳鼻",
+                "file": "wx-kou-bi"
+            },
+            {
+                "key": "撇嘴",
+                "file": "wx-pie-zui"
+            },
+            {
+                "key": "撇嘴",
+                "file": "wx-pie-zui"
+            },
+            {
+                "key": "擁抱",
+                "file": "wx-yong-bao"
+            },
+            {
+                "key": "擦汗",
+                "file": "wx-ca-han"
+            },
+            {
+                "key": "擦汗",
+                "file": "wx-ca-han"
+            },
+            {
+                "key": "敲打",
+                "file": "wx-qiao-da"
+            },
+            {
+                "key": "敲打",
+                "file": "wx-qiao-da"
+            },
+            {
+                "key": "无语",
+                "file": "wx-wu-yu"
+            },
+            {
+                "key": "旺柴",
+                "file": "wx-wang-chai"
+            },
+            {
+                "key": "旺柴",
+                "file": "wx-wang-chai"
+            },
+            {
+                "key": "晕",
+                "file": "wx-yun"
+            },
+            {
+                "key": "暈",
+                "file": "wx-yun"
+            },
+            {
+                "key": "月亮",
+                "file": "wx-yue-liang"
+            },
+            {
+                "key": "月亮",
+                "file": "wx-yue-liang"
+            },
+            {
+                "key": "机智",
+                "file": "wx-ji-zhi"
+            },
+            {
+                "key": "枯萎",
+                "file": "wx-diao-xie"
+            },
+            {
+                "key": "機智",
+                "file": "wx-ji-zhi"
+            },
+            {
+                "key": "歐耶",
+                "file": "wx-ou-ye"
+            },
+            {
+                "key": "汗",
+                "file": "wx-han"
+            },
+            {
+                "key": "流汗",
+                "file": "wx-liu-han"
+            },
+            {
+                "key": "流汗",
+                "file": "wx-liu-han"
+            },
+            {
+                "key": "流泪",
+                "file": "wx-liu-lei"
+            },
+            {
+                "key": "流淚",
+                "file": "wx-liu-lei"
+            },
+            {
+                "key": "激动",
+                "file": "wx-ji-dong"
+            },
+            {
+                "key": "激動",
+                "file": "wx-ji-dong"
+            },
+            {
+                "key": "炸弹",
+                "file": "wx-zha-dan"
+            },
+            {
+                "key": "炸彈",
+                "file": "wx-zha-dan"
+            },
+            {
+                "key": "烟花",
+                "file": "wx-yan-hua"
+            },
+            {
+                "key": "無語",
+                "file": "wx-wu-yu"
+            },
+            {
+                "key": "煙花",
+                "file": "wx-yan-hua"
+            },
+            {
+                "key": "爆竹",
+                "file": "wx-bao-zhu"
+            },
+            {
+                "key": "爆竹",
+                "file": "wx-bao-zhu"
+            },
+            {
+                "key": "爱你",
+                "file": "wx-ai-ni"
+            },
+            {
+                "key": "爱心",
+                "file": "wx-ai-xin"
+            },
+            {
+                "key": "爱情",
+                "file": "wx-ai-qing"
+            },
+            {
+                "key": "猪头",
+                "file": "wx-zhu-tou"
+            },
+            {
+                "key": "献吻",
+                "file": "wx-xian-wen"
+            },
+            {
+                "key": "獻吻",
+                "file": "wx-xian-wen"
+            },
+            {
+                "key": "玫瑰",
+                "file": "wx-mei-gui"
+            },
+            {
+                "key": "玫瑰",
+                "file": "wx-mei-gui"
+            },
+            {
+                "key": "瓢虫",
+                "file": "wx-piao-chong"
+            },
+            {
+                "key": "生病",
+                "file": "wx-sheng-bing"
+            },
+            {
+                "key": "生病",
+                "file": "wx-sheng-bing"
+            },
+            {
+                "key": "甲蟲",
+                "file": "wx-piao-chong"
+            },
+            {
+                "key": "疑問",
+                "file": "wx-yi-wen"
+            },
+            {
+                "key": "疑问",
+                "file": "wx-yi-wen"
+            },
+            {
+                "key": "疯了",
+                "file": "wx-feng-le"
+            },
+            {
+                "key": "瘋了",
+                "file": "wx-feng-le"
+            },
+            {
+                "key": "發",
+                "file": "wx-fa"
+            },
+            {
+                "key": "發",
+                "file": "wx-fa"
+            },
+            {
+                "key": "發呆",
+                "file": "wx-fa-dai"
+            },
+            {
+                "key": "發怒",
+                "file": "wx-fa-nu"
+            },
+            {
+                "key": "發抖",
+                "file": "wx-fa-dou"
+            },
+            {
+                "key": "白眼",
+                "file": "wx-bai-yan"
+            },
+            {
+                "key": "白眼",
+                "file": "wx-bai-yan"
+            },
+            {
+                "key": "皱眉",
+                "file": "wx-zhou-mei"
+            },
+            {
+                "key": "皺眉",
+                "file": "wx-zhou-mei"
+            },
+            {
+                "key": "睡",
+                "file": "wx-shui"
+            },
+            {
+                "key": "睡",
+                "file": "wx-shui"
+            },
+            {
+                "key": "破涕为笑",
+                "file": "wx-po-ti-wei-xiao"
+            },
+            {
+                "key": "破涕為笑",
+                "file": "wx-po-ti-wei-xiao"
+            },
+            {
+                "key": "磕头",
+                "file": "wx-ke-tou"
+            },
+            {
+                "key": "磕頭",
+                "file": "wx-ke-tou"
+            },
+            {
+                "key": "礼物",
+                "file": "wx-li-wu"
+            },
+            {
+                "key": "社会社会",
+                "file": "wx-she-hui-she-hui"
+            },
+            {
+                "key": "福",
+                "file": "wx-fu"
+            },
+            {
+                "key": "福",
+                "file": "wx-fu"
+            },
+            {
+                "key": "禮物",
+                "file": "wx-li-wu"
+            },
+            {
+                "key": "笑脸",
+                "file": "wx-xiao-lian"
+            },
+            {
+                "key": "笑臉",
+                "file": "wx-xiao-lian"
+            },
+            {
+                "key": "篮球",
+                "file": "wx-lan-qiu"
+            },
+            {
+                "key": "籃球",
+                "file": "wx-lan-qiu"
+            },
+            {
+                "key": "糗大了",
+                "file": "wx-qiu-da-le"
+            },
+            {
+                "key": "累",
+                "file": "wx-kun"
+            },
+            {
+                "key": "红包",
+                "file": "wx-hong-bao"
+            },
+            {
+                "key": "羞辱",
+                "file": "wx-qiu-da-le"
+            },
+            {
+                "key": "翻白眼",
+                "file": "wx-fan-bai-yan"
+            },
+            {
+                "key": "耶",
+                "file": "wx-ou-ye"
+            },
+            {
+                "key": "胜利",
+                "file": "wx-sheng-li"
+            },
+            {
+                "key": "脸红",
+                "file": "wx-lian-hong"
+            },
+            {
+                "key": "臉紅",
+                "file": "wx-lian-hong"
+            },
+            {
+                "key": "色",
+                "file": "wx-se"
+            },
+            {
+                "key": "色",
+                "file": "wx-se"
+            },
+            {
+                "key": "苦涩",
+                "file": "wx-ku-se"
+            },
+            {
+                "key": "茶",
+                "file": "wx-cha"
+            },
+            {
+                "key": "茶",
+                "file": "wx-cha"
+            },
+            {
+                "key": "菜刀",
+                "file": "wx-cai-dao"
+            },
+            {
+                "key": "菜刀",
+                "file": "wx-cai-dao"
+            },
+            {
+                "key": "蛋糕",
+                "file": "wx-dan-gao"
+            },
+            {
+                "key": "蛋糕",
+                "file": "wx-dan-gao"
+            },
+            {
+                "key": "蜡烛",
+                "file": "wx-la-zhu"
+            },
+            {
+                "key": "蠟燭",
+                "file": "wx-la-zhu"
+            },
+            {
+                "key": "衰",
+                "file": "wx-shuai"
+            },
+            {
+                "key": "衰",
+                "file": "wx-shuai"
+            },
+            {
+                "key": "裂开",
+                "file": "wx-beng-kui"
+            },
+            {
+                "key": "西瓜",
+                "file": "wx-xi-gua"
+            },
+            {
+                "key": "西瓜",
+                "file": "wx-xi-gua"
+            },
+            {
+                "key": "親親",
+                "file": "wx-qin-qin"
+            },
+            {
+                "key": "調皮",
+                "file": "wx-diao-pi"
+            },
+            {
+                "key": "讓我看看",
+                "file": "wx-rang-wo-kan-kan"
+            },
+            {
+                "key": "让我看看",
+                "file": "wx-rang-wo-kan-kan"
+            },
+            {
+                "key": "调皮",
+                "file": "wx-diao-pi"
+            },
+            {
+                "key": "豬頭",
+                "file": "wx-zhu-tou"
+            },
+            {
+                "key": "足球",
+                "file": "wx-zu-qiu"
+            },
+            {
+                "key": "足球",
+                "file": "wx-zu-qiu"
+            },
+            {
+                "key": "跳繩",
+                "file": "wx-tiao-sheng"
+            },
+            {
+                "key": "跳绳",
+                "file": "wx-tiao-sheng"
+            },
+            {
+                "key": "跳跳",
+                "file": "wx-tiao-tiao"
+            },
+            {
+                "key": "跳跳",
+                "file": "wx-tiao-tiao"
+            },
+            {
+                "key": "轉圈",
+                "file": "wx-zhuan-quan"
+            },
+            {
+                "key": "转圈",
+                "file": "wx-zhuan-quan"
+            },
+            {
+                "key": "鄙視",
+                "file": "wx-bi-shi"
+            },
+            {
+                "key": "鄙视",
+                "file": "wx-bi-shi"
+            },
+            {
+                "key": "酷",
+                "file": "wx-ku"
+            },
+            {
+                "key": "酷",
+                "file": "wx-ku"
+            },
+            {
+                "key": "閃電",
+                "file": "wx-shan-dian"
+            },
+            {
+                "key": "閉嘴",
+                "file": "wx-bi-zui"
+            },
+            {
+                "key": "闪电",
+                "file": "wx-shan-dian"
+            },
+            {
+                "key": "闭嘴",
+                "file": "wx-bi-zui"
+            },
+            {
+                "key": "阴险",
+                "file": "wx-yin-xian"
+            },
+            {
+                "key": "陰險",
+                "file": "wx-yin-xian"
+            },
+            {
+                "key": "难过",
+                "file": "wx-nan-guo"
+            },
+            {
+                "key": "難受",
+                "file": "wx-ku-se"
+            },
+            {
+                "key": "難過",
+                "file": "wx-nan-guo"
+            },
+            {
+                "key": "飛吻",
+                "file": "wx-fei-wen"
+            },
+            {
+                "key": "飞吻",
+                "file": "wx-fei-wen"
+            },
+            {
+                "key": "飯",
+                "file": "wx-fan"
+            },
+            {
+                "key": "饑餓",
+                "file": "wx-ji-e"
+            },
+            {
+                "key": "饥饿",
+                "file": "wx-ji-e"
+            },
+            {
+                "key": "饭",
+                "file": "wx-fan"
+            },
+            {
+                "key": "驚恐",
+                "file": "wx-jing-kong"
+            },
+            {
+                "key": "驚訝",
+                "file": "wx-jing-ya"
+            },
+            {
+                "key": "骷髅",
+                "file": "wx-ku-lou"
+            },
+            {
+                "key": "骷髏頭",
+                "file": "wx-ku-lou"
+            },
+            {
+                "key": "鬼魂",
+                "file": "wx-gui-hun"
+            },
+            {
+                "key": "鸡",
+                "file": "wx-xiao-ji"
+            },
+            {
+                "key": "鼓掌",
+                "file": "wx-gu-zhang"
+            },
+            {
+                "key": "鼓掌",
+                "file": "wx-gu-zhang"
+            }
+        ]
+    },
+    {
+        "preTag": "/",
+        "postTag": "",
+        "keys": [
+            {
+                "key": "NO",
+                "file": "wx-bu-xing"
+            },
+            {
+                "key": "OK",
+                "file": "wx-ok"
+            },
+            {
+                "key": "乒乓",
+                "file": "wx-ping-pang"
+            },
+            {
+                "key": "亲亲",
+                "file": "wx-qin-qin"
+            },
+            {
+                "key": "便便",
+                "file": "wx-bian-bian"
+            },
+            {
+                "key": "偷笑",
+                "file": "wx-tou-xiao"
+            },
+            {
+                "key": "傲慢",
+                "file": "wx-ao-man"
+            },
+            {
+                "key": "再见",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "冷汗",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "凋谢",
+                "file": "wx-diao-xie"
+            },
+            {
+                "key": "刀",
+                "file": "wx-dao"
+            },
+            {
+                "key": "勾引",
+                "file": "wx-gou-yin"
+            },
+            {
+                "key": "发呆",
+                "file": "wx-fa-dai"
+            },
+            {
+                "key": "发怒",
+                "file": "wx-fa-nu"
+            },
+            {
+                "key": "发抖",
+                "file": "wx-fa-dou"
+            },
+            {
+                "key": "可怜",
+                "file": "wx-ke-lian"
+            },
+            {
+                "key": "可爱",
+                "file": "wx-yu-kuai"
+            },
+            {
+                "key": "右哼哼",
+                "file": "wx-you-heng-heng"
+            },
+            {
+                "key": "右太极",
+                "file": "wx-you-tai-ji"
+            },
+            {
+                "key": "吐",
+                "file": "wx-tu"
+            },
+            {
+                "key": "吓",
+                "file": "wx-xia"
+            },
+            {
+                "key": "呲牙",
+                "file": "wx-ci-ya"
+            },
+            {
+                "key": "咒骂",
+                "file": "wx-zhou-ma"
+            },
+            {
+                "key": "咖啡",
+                "file": "wx-ka-fei"
+            },
+            {
+                "key": "哈欠",
+                "file": "wx-ha-qian"
+            },
+            {
+                "key": "啤酒",
+                "file": "wx-pi-jiu"
+            },
+            {
+                "key": "嘘",
+                "file": "wx-xu"
+            },
+            {
+                "key": "回头",
+                "file": "wx-hui-tou"
+            },
+            {
+                "key": "困",
+                "file": "wx-kun"
+            },
+            {
+                "key": "坏笑",
+                "file": "wx-huai-xiao"
+            },
+            {
+                "key": "大兵",
+                "file": "wx-you-xian"
+            },
+            {
+                "key": "大哭",
+                "file": "wx-da-ku"
+            },
+            {
+                "key": "太阳",
+                "file": "wx-tai-yang"
+            },
+            {
+                "key": "奋斗",
+                "file": "wx-fen-dou"
+            },
+            {
+                "key": "委屈",
+                "file": "wx-wei-qu"
+            },
+            {
+                "key": "害羞",
+                "file": "wx-hai-xiu"
+            },
+            {
+                "key": "尴尬",
+                "file": "wx-gan-ga"
+            },
+            {
+                "key": "左哼哼",
+                "file": "wx-zuo-heng-heng"
+            },
+            {
+                "key": "左太极",
+                "file": "wx-zuo-tai-ji"
+            },
+            {
+                "key": "差劲",
+                "file": "wx-cha-jin"
+            },
+            {
+                "key": "弱",
+                "file": "wx-ruo"
+            },
+            {
+                "key": "强",
+                "file": "wx-qiang"
+            },
+            {
+                "key": "得意",
+                "file": "wx-de-yi"
+            },
+            {
+                "key": "微笑",
+                "file": "wx-wei-xiao"
+            },
+            {
+                "key": "心碎",
+                "file": "wx-xin-sui"
+            },
+            {
+                "key": "快哭了",
+                "file": "wx-kuai-ku-le"
+            },
+            {
+                "key": "怄火",
+                "file": "wx-pen-huo"
+            },
+            {
+                "key": "惊恐",
+                "file": "wx-jing-kong"
+            },
+            {
+                "key": "惊讶",
+                "file": "wx-jing-ya"
+            },
+            {
+                "key": "憨笑",
+                "file": "wx-da-xiao"
+            },
+            {
+                "key": "抓狂",
+                "file": "wx-zhua-kuang"
+            },
+            {
+                "key": "折磨",
+                "file": "wx-feng-le"
+            },
+            {
+                "key": "抠鼻",
+                "file": "wx-kou-bi"
+            },
+            {
+                "key": "抱拳",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "拥抱",
+                "file": "wx-yong-bao"
+            },
+            {
+                "key": "拳头",
+                "file": "wx-quan-tou"
+            },
+            {
+                "key": "挥手",
+                "file": "wx-tou-xiang"
+            },
+            {
+                "key": "握手",
+                "file": "wx-wo-shou"
+            },
+            {
+                "key": "撇嘴",
+                "file": "wx-pie-zui"
+            },
+            {
+                "key": "擦汗",
+                "file": "wx-ca-han"
+            },
+            {
+                "key": "敲打",
+                "file": "wx-qiao-da"
+            },
+            {
+                "key": "晕",
+                "file": "wx-yun"
+            },
+            {
+                "key": "月亮",
+                "file": "wx-yue-liang"
+            },
+            {
+                "key": "流汗",
+                "file": "wx-liu-han"
+            },
+            {
+                "key": "流泪",
+                "file": "wx-liu-lei"
+            },
+            {
+                "key": "激动",
+                "file": "wx-ji-dong"
+            },
+            {
+                "key": "炸弹",
+                "file": "wx-zha-dan"
+            },
+            {
+                "key": "爱你",
+                "file": "wx-ai-ni"
+            },
+            {
+                "key": "爱心",
+                "file": "wx-ai-xin"
+            },
+            {
+                "key": "爱情",
+                "file": "wx-ai-qing"
+            },
+            {
+                "key": "猪头",
+                "file": "wx-zhu-tou"
+            },
+            {
+                "key": "献吻",
+                "file": "wx-xian-wen"
+            },
+            {
+                "key": "玫瑰",
+                "file": "wx-mei-gui"
+            },
+            {
+                "key": "瓢虫",
+                "file": "wx-piao-chong"
+            },
+            {
+                "key": "疑问",
+                "file": "wx-yi-wen"
+            },
+            {
+                "key": "白眼",
+                "file": "wx-bai-yan"
+            },
+            {
+                "key": "睡",
+                "file": "wx-shui"
+            },
+            {
+                "key": "磕头",
+                "file": "wx-ke-tou"
+            },
+            {
+                "key": "示爱",
+                "file": "wx-zui-chun"
+            },
+            {
+                "key": "礼物",
+                "file": "wx-li-wu"
+            },
+            {
+                "key": "篮球",
+                "file": "wx-lan-qiu"
+            },
+            {
+                "key": "糗大了",
+                "file": "wx-qiu-da-le"
+            },
+            {
+                "key": "胜利",
+                "file": "wx-sheng-li"
+            },
+            {
+                "key": "色",
+                "file": "wx-se"
+            },
+            {
+                "key": "菜刀",
+                "file": "wx-cai-dao"
+            },
+            {
+                "key": "蛋糕",
+                "file": "wx-dan-gao"
+            },
+            {
+                "key": "街舞",
+                "file": "wx-jie-wu"
+            },
+            {
+                "key": "衰",
+                "file": "wx-shuai"
+            },
+            {
+                "key": "西瓜",
+                "file": "wx-xi-gua"
+            },
+            {
+                "key": "调皮",
+                "file": "wx-diao-pi"
+            },
+            {
+                "key": "足球",
+                "file": "wx-zu-qiu"
+            },
+            {
+                "key": "跳绳",
+                "file": "wx-tiao-sheng"
+            },
+            {
+                "key": "跳跳",
+                "file": "wx-tiao-tiao"
+            },
+            {
+                "key": "转圈",
+                "file": "wx-zhuan-quan"
+            },
+            {
+                "key": "鄙视",
+                "file": "wx-bi-shi"
+            },
+            {
+                "key": "酷",
+                "file": "wx-ku"
+            },
+            {
+                "key": "闪电",
+                "file": "wx-shan-dian"
+            },
+            {
+                "key": "闭嘴",
+                "file": "wx-bi-zui"
+            },
+            {
+                "key": "阴险",
+                "file": "wx-yin-xian"
+            },
+            {
+                "key": "难过",
+                "file": "wx-nan-guo"
+            },
+            {
+                "key": "飞吻",
+                "file": "wx-fei-wen"
+            },
+            {
+                "key": "饥饿",
+                "file": "wx-ji-e"
+            },
+            {
+                "key": "饭",
+                "file": "wx-fan"
+            },
+            {
+                "key": "骷髅",
+                "file": "wx-ku-lou"
+            },
+            {
+                "key": "鼓掌",
+                "file": "wx-gu-zhang"
+            }
+        ]
+    },
+    {
+        "preTag": "/:",
+        "postTag": "",
+        "keys": [
+            {
+                "key": "!!!",
+                "file": "wx-ku-lou"
+            },
+            {
+                "key": "#-0",
+                "file": "wx-ji-dong"
+            },
+            {
+                "key": "&-(",
+                "file": "wx-qiu-da-le"
+            },
+            {
+                "key": "&>",
+                "file": "wx-you-tai-ji"
+            },
+            {
+                "key": ",@!",
+                "file": "wx-shuai"
+            },
+            {
+                "key": ",@-D",
+                "file": "wx-yu-kuai"
+            },
+            {
+                "key": ",@@",
+                "file": "wx-yun"
+            },
+            {
+                "key": ",@P",
+                "file": "wx-tou-xiao"
+            },
+            {
+                "key": ",@f",
+                "file": "wx-fen-dou"
+            },
+            {
+                "key": ",@o",
+                "file": "wx-ao-man"
+            },
+            {
+                "key": ",@x",
+                "file": "wx-xu"
+            },
+            {
+                "key": "--b",
+                "file": "wx-leng-han"
+            },
+            {
+                "key": "8*",
+                "file": "wx-ke-lian"
+            },
+            {
+                "key": "8-)",
+                "file": "wx-de-yi"
+            },
+            {
+                "key": ":!",
+                "file": "wx-jing-kong"
+            },
+            {
+                "key": ":\"(",
+                "file": "wx-da-ku"
+            },
+            {
+                "key": ":\"|",
+                "file": "wx-kuai-ku-le"
+            },
+            {
+                "key": ":$",
+                "file": "wx-hai-xiu"
+            },
+            {
+                "key": ":(",
+                "file": "wx-nan-guo"
+            },
+            {
+                "key": ":)",
+                "file": "wx-wei-xiao"
+            },
+            {
+                "key": ":*",
+                "file": "wx-qin-qin"
+            },
+            {
+                "key": ":+",
+                "file": "wx-ku"
+            },
+            {
+                "key": ":,@",
+                "file": "wx-you-xian"
+            },
+            {
+                "key": ":-O",
+                "file": "wx-ha-qian"
+            },
+            {
+                "key": ":-S",
+                "file": "wx-zhou-ma"
+            },
+            {
+                "key": ":-|",
+                "file": "wx-gan-ga"
+            },
+            {
+                "key": ":8",
+                "file": "wx-feng-le"
+            },
+            {
+                "key": ":<",
+                "file": "wx-liu-lei"
+            },
+            {
+                "key": ":>",
+                "file": "wx-da-xiao"
+            },
+            {
+                "key": ":@",
+                "file": "wx-fa-nu"
+            },
+            {
+                "key": ":B",
+                "file": "wx-se"
+            },
+            {
+                "key": ":D",
+                "file": "wx-ci-ya"
+            },
+            {
+                "key": ":L",
+                "file": "wx-liu-han"
+            },
+            {
+                "key": ":O",
+                "file": "wx-jing-ya"
+            },
+            {
+                "key": ":P",
+                "file": "wx-diao-pi"
+            },
+            {
+                "key": ":Q",
+                "file": "wx-zhua-kuang"
+            },
+            {
+                "key": ":T",
+                "file": "wx-tu"
+            },
+            {
+                "key": ":X",
+                "file": "wx-bi-zui"
+            },
+            {
+                "key": ":Z",
+                "file": "wx-shui"
+            },
+            {
+                "key": ":d",
+                "file": "wx-bai-yan"
+            },
+            {
+                "key": ":g",
+                "file": "wx-ji-e"
+            },
+            {
+                "key": ":|",
+                "file": "wx-fa-dai"
+            },
+            {
+                "key": ":~",
+                "file": "wx-pie-zui"
+            },
+            {
+                "key": "<&",
+                "file": "wx-zuo-tai-ji"
+            },
+            {
+                "key": "<@",
+                "file": "wx-zuo-heng-heng"
+            },
+            {
+                "key": "<L>",
+                "file": "wx-fei-wen"
+            },
+            {
+                "key": "<O>",
+                "file": "wx-pen-huo"
+            },
+            {
+                "key": "<W>",
+                "file": "wx-xi-gua"
+            },
+            {
+                "key": ">-|",
+                "file": "wx-bi-shi"
+            },
+            {
+                "key": "?",
+                "file": "wx-yi-wen"
+            },
+            {
+                "key": "@)",
+                "file": "wx-bao-quan"
+            },
+            {
+                "key": "@>",
+                "file": "wx-you-heng-heng"
+            },
+            {
+                "key": "@@",
+                "file": "wx-quan-tou"
+            },
+            {
+                "key": "@x",
+                "file": "wx-xia"
+            },
+            {
+                "key": "B-)",
+                "file": "wx-huai-xiao"
+            },
+            {
+                "key": "P-(",
+                "file": "wx-wei-qu"
+            },
+            {
+                "key": "X-)",
+                "file": "wx-yin-xian"
+            },
+            {
+                "key": "bad",
+                "file": "wx-cha-jin"
+            },
+            {
+                "key": "basketb",
+                "file": "wx-lan-qiu"
+            },
+            {
+                "key": "beer",
+                "file": "wx-pi-jiu"
+            },
+            {
+                "key": "bome",
+                "file": "wx-zha-dan"
+            },
+            {
+                "key": "break",
+                "file": "wx-xin-sui"
+            },
+            {
+                "key": "bye",
+                "file": "wx-zai-jian"
+            },
+            {
+                "key": "cake",
+                "file": "wx-dan-gao"
+            },
+            {
+                "key": "circle",
+                "file": "wx-zhuan-quan"
+            },
+            {
+                "key": "coffee",
+                "file": "wx-ka-fei"
+            },
+            {
+                "key": "dig",
+                "file": "wx-kou-bi"
+            },
+            {
+                "key": "eat",
+                "file": "wx-fan"
+            },
+            {
+                "key": "fade",
+                "file": "wx-diao-xie"
+            },
+            {
+                "key": "footb",
+                "file": "wx-zu-qiu"
+            },
+            {
+                "key": "gift",
+                "file": "wx-li-wu"
+            },
+            {
+                "key": "handclap",
+                "file": "wx-gu-zhang"
+            },
+            {
+                "key": "heart",
+                "file": "wx-ai-xin"
+            },
+            {
+                "key": "hiphot",
+                "file": "wx-jie-wu"
+            },
+            {
+                "key": "hug",
+                "file": "wx-yong-bao"
+            },
+            {
+                "key": "jj",
+                "file": "wx-gou-yin"
+            },
+            {
+                "key": "jump",
+                "file": "wx-tiao-tiao"
+            },
+            {
+                "key": "kiss",
+                "file": "wx-xian-wen"
+            },
+            {
+                "key": "kn",
+                "file": "wx-dao"
+            },
+            {
+                "key": "kotow",
+                "file": "wx-ke-tou"
+            },
+            {
+                "key": "ladybug",
+                "file": "wx-piao-chong"
+            },
+            {
+                "key": "li",
+                "file": "wx-shan-dian"
+            },
+            {
+                "key": "love",
+                "file": "wx-ai-qing"
+            },
+            {
+                "key": "lvu",
+                "file": "wx-ai-ni"
+            },
+            {
+                "key": "moon",
+                "file": "wx-yue-liang"
+            },
+            {
+                "key": "no",
+                "file": "wx-bu-xing"
+            },
+            {
+                "key": "oY",
+                "file": "wx-tou-xiang"
+            },
+            {
+                "key": "ok",
+                "file": "wx-ok"
+            },
+            {
+                "key": "oo",
+                "file": "wx-ping-pang"
+            },
+            {
+                "key": "pd",
+                "file": "wx-cai-dao"
+            },
+            {
+                "key": "pig",
+                "file": "wx-zhu-tou"
+            },
+            {
+                "key": "rose",
+                "file": "wx-mei-gui"
+            },
+            {
+                "key": "shake",
+                "file": "wx-fa-dou"
+            },
+            {
+                "key": "share",
+                "file": "wx-wo-shou"
+            },
+            {
+                "key": "shit",
+                "file": "wx-bian-bian"
+            },
+            {
+                "key": "showlove",
+                "file": "wx-zui-chun"
+            },
+            {
+                "key": "skip",
+                "file": "wx-tiao-sheng"
+            },
+            {
+                "key": "strong",
+                "file": "wx-qiang"
+            },
+            {
+                "key": "sun",
+                "file": "wx-tai-yang"
+            },
+            {
+                "key": "turn",
+                "file": "wx-hui-tou"
+            },
+            {
+                "key": "v",
+                "file": "wx-sheng-li"
+            },
+            {
+                "key": "weak",
+                "file": "wx-ruo"
+            },
+            {
+                "key": "wipe",
+                "file": "wx-ca-han"
+            },
+            {
+                "key": "xx",
+                "file": "wx-qiao-da"
+            },
+            {
+                "key": "|-)",
+                "file": "wx-kun"
+            }
+        ]
+    }
+]
